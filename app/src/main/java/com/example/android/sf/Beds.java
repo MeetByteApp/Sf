@@ -6,13 +6,23 @@ package com.example.android.sf;
 
 public class Beds {
     private String length, width, thickness;
-    private String model;
+    private String model, key;
+
+    public Beds(){}
 
     Beds(String l, String w, String t, String m) {
         length = l;
         width = w;
         thickness = t;
         model = m;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 
     public String getLength() {
